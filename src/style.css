@@ -1,0 +1,176 @@
+body {
+    background-color: #181818;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 50%;
+    background-color: #121212;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+.user {
+    margin-left: 20px;
+}
+
+.user > img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.functions {
+    cursor: pointer;
+}
+
+.noResult {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.videoMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 800px;
+    height: 450px;
+}
+
+.videoSection {
+    padding-left: 80px;
+}
+
+.videoLists > div {
+    float: right;
+    width: 80%;
+}
+
+.videoInfo > .channelTitle, .titleVideo {
+    color: #fff;
+    font-family: system-ui;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.description {
+    color: #fff;
+    font-family: system-ui;
+    width: 75%;
+}
+
+.videoItems {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 0 15px;
+}
+
+.titleVideos {
+    color: #fff;
+    font-family: system-ui;
+    width: 300px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .icons {
+        display: none;
+    }
+
+    .videoMain {
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .videoSection {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .videoLists > div {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    input {
+        width: 220px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .videoItems > img {
+        width: 250px;
+    }
+
+    .titleVideos {
+        color: #fff;
+        font-family: system-ui;
+        width: 300px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .videoInfo > .channelTitle, .titleVideo {
+        color: #fff;
+        font-family: system-ui;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    input {
+        width: 320px;
+    }
+
+    iframe {
+        width: 380px;
+        height: 380px;
+    }
+
+    .videoItems > img {
+        width: 350px;
+    }
+
+    .titleVideos {
+        color: #fff;
+        font-family: system-ui;
+        width: 300px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .videoInfo > .channelTitle, .titleVideo {
+        color: #fff;
+        font-family: system-ui;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
